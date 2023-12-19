@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {{>header}}
+   <title>sign in page</title>
+   <link rel="stylesheet" href="/css/{{#if darkMode}}signindarkstyle.css{{else}}signinstyle.css{{/if}}">
+   <script src="js/signinscript.js" defer type="module"></script>
+   
+</head>
+<body>
+    {{>navbar}}
+    <main>
+        <div class="container">
+            <div class="form-box">
+                <h1 id="title">Sign In</h1>
+                <p>Don't have an account? <a href="signup">Sign Up</a></p>
+
+                {{!-- account created --}}
+            
+                    <div id="Popup" class="popup">
+                        <div class="popup-content">
+                            <span class="close" id="closePopupButton">&times;</span>
+                            <p class="error-message">No such account!</p>
+                        </div>
+                    </div>
+
+
+
+
+                {{!-- account craeted finished --}}
+
+
+                <form id="my-form" action="/signin" method="POST">
+                    <div class="input-group">
+                       
+                        
+                        
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" placeholder="Email" id="email" name="email", value="" required>
+                        </div>   
+
+                        <div class="input-field">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="Password" id="password" name="password", value="" required>
+                        </div>
+
+                        
+
+
+
+                        <p>Lost password? <a href="#">Click here!</a></p>
+                    </div>
+
+                    <div class="btn-field">
+                        <button id="signinbtn" type="submit">Sign In</button>
+
+                    </div>
+
+                </form>
+
+                
+                
+            </div>
+        </div>
+
+    
+    </main>
+
+
+    {{>footer}}
+</body>
+</html>

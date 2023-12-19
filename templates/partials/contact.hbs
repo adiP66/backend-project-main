@@ -1,0 +1,28 @@
+<div class="bg-white rounded-xl shadow-md overflow-hidden md:max-w-3xl mx-auto my-20" id="contact">
+    <div class="p-8">
+        <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold text-center">Contact us</div>
+        <div class="flex justify-center items-center mt-4">
+            <i class="fas fa-phone-alt text-indigo-500"></i>
+            <span class="ml-2 text-gray-700">+919987568753</span>
+        </div>
+        <form class="mt-4" action="/contactus-data" method="POST">
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name/Organization</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" name="name" type="text" placeholder="Your name">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="phone">Phone</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phone" name="phone" type="tel" placeholder="Your Phone number" pattern="^[0-9]{10}$">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Message</label>
+                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" name="message" placeholder="Your message"></textarea>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                    Send
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

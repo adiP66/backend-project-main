@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/introone.css">
+    <title>Web Templates Store Onboarding</title>
+    <script src="js/introone.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to our Web Templates Store</h1>
+        <p>Let's customize your experience by asking a few questions:</p>
+        <form id="onboarding-form">
+            <div class="question">
+                <label for="purpose" class='upperlabel'>Do you want a website for your business or personal use?</label>
+                <select id="purpose" class="answer-input">
+                    <option value="business">Business</option>
+                    <option value="personal">Personal</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="topics" class='lowerlabel'>Select topics for web templates you are interested in:</label>
+                <select id="topics" class="answer-input" multiple>
+                    <option value="portfolio">Portfolio</option>
+                    <option value="blog">Blog</option>
+                    <option value="e-commerce">E-commerce</option>
+                    <option value="landing-page">Landing Page</option>
+                    <option value="education">Education</option>
+                    <option value="travel">Travel</option>
+                    <option value="restaurant">Restaurant</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>

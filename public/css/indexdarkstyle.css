@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    background-color: black;
+}
+
+
+
+
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+.logodiv{
+    filter: invert(100%);
+}
+
+.logodiv{
+    margin: .5rem;
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+
+}
+
+.navbar ul li a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+
+.navbar li a::after{
+    content: '';
+    display:block;
+    height: 4px;
+    width: 0;
+    background: #c4c4f7;   
+    transition: all .5s;
+}
+
+.navbar li a:hover::after{
+    width: 100%;
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+
+.signin-btn{
+    padding: 15px 30px;
+    margin-left: 10px;
+    background: #c4c4f7;
+    color: white; 
+    outline: none;
+    border: none;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 50px;
+    /* height: 30px; */
+    white-space: nowrap; 
+    transition: 0.2s;
+    align-items: center;
+    margin-top: auto;
+   
+}
+
+.signin-btn:hover{
+    color: white;
+}
+
+
+.signup-btn{
+    padding: 15px 30px;
+    background: #c4c4f7;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 50px;
+    /* height: 30px; */
+    white-space: nowrap; 
+    transition: 0.2s;
+    align-items: center;
+    margin-top: auto;
+   
+}
+
+.signup-btn:hover{
+    color: white;
+}
+
+
+
+footer{
+    background-color: #111;
+}
+
+.footerContainer{
+width: 100%;
+padding: 70px 30px 20px;
+}
+
+.socialIcons{
+display: flex;
+justify-content: center;
+}
+
+.socialIcons a{
+text-decoration: none;
+padding: 10px;
+background-color: white;
+margin: 10px;
+border-radius: 50%;
+}
+
+.socialIcons a i {
+font-size: 2em;
+color: black;
+opacity: 0.9;
+}
+
+.socialIcons a:hover{
+background: #111;
+transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+color: white;
+transition: 0.5s;
+}
+
+.footerNav{
+margin: 30px 0;
+}
+
+.footerNav ul{
+display: flex;
+justify-content: center;
+list-style: none;
+
+}
+
+
+.footerNav ul li a{
+color: white;
+margin: 20px;
+text-decoration: none;
+font-size: 1.3em;
+opacity: 0.7;
+transition: 0.5s;
+}
+
+.footerNav ul li a:hover{
+opacity: 1;
+}
+
+
+
+
+.footerBottom{
+color: #808080;
+}
+
+
+.fade-in-button {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+}
+
+.enlarge-on-hover {
+    transition: transform 0.3s ease;
+}
+
+.enlarge-on-hover:hover {
+    transform: scale(1.1);
+}
+
+#feedback-button {
+    position: fixed;
+    bottom: 75px;
+    right: 25px;
+    z-index: 9999;
+}
+#feedback-form {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    z-index: 9998;
+}
+
+#dark-mode{
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    z-index: 9999;
+}
+
+.profile-pic {
+    width: 40px; /* adjust as needed */
+    height: 40px;
+    border-radius: 50%;
+    position: relative; 
+    left: 12px;
+    bottom: 5px
+}
+
+
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.slide-in {
+    animation: slideIn 2s forwards;
+    opacity: 0;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+@media(max-width: 550px){
+    .toggle-button{
+        display: flex;
+        top: 25px;
+    }
+
+    .navbar-links{
+        display: none; 
+        width: 100%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li{
+        text-align: center;
+        padding: 10px;
+    }
+
+    .profile-pic {
+     display: none;
+    }
+
+
+    .navbar-links.active{
+        display: flex;  
+    }
+
+
+    footer{
+        position: relative;
+        /* top: 30%; */
+    }
+
+    footer .footerNav ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    footer .footerNav ul li{
+        padding: 12px;
+    }
+
+    footer .footerBottom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #808080;
+    }
+
+    .signin-btn{
+        margin-left: 0;
+       }
+
+    .enlarge-on-hover {
+        transition: none;
+    }
+    
+    .enlarge-on-hover:hover {
+        transform: none;
+    }
+ 
+       
+
+}

@@ -1,0 +1,99 @@
+<div class="d-flex justify-content-between flex-wrap flex-md nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h1 class="h2">You have {{basicorpremium customer}}</h1>
+  <div class="btn-toolbar mb-2 mb-md 0">
+    <div class="btn-group me-2">
+      
+
+    </div>
+  </div>
+</div>
+
+{{#if customer.basic}}
+ <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Basic Plan</h3>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">₹500/month</h4>
+                        <p class="card-text">Access to basic features</p>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>5 Templates</td>
+                                    <td>&#10004;</td> <!-- Checkmark (tick) -->
+                                </tr>
+                                <tr>
+                                    <td>SEO</td>
+                                    <td>&#10004;</td> <!-- Checkmark (tick) -->
+                                </tr>
+                            </tbody>
+                        </table>
+                           <a class="btn btn-danger" data-bs-toggle="modal" id="deleteButton" data-bs-target="#deleteModal">Cancel plan</a>
+                    </div>
+                </div>
+            </div>
+
+{{else if customer.premium}}
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Premium Plan</h3>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">₹1000/month</h4>
+                        <p class="card-text">Access to premium features</p>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>10 Templates</td>
+                                    <td>&#10004;</td> <!-- Checkmark (tick) -->
+                                </tr>
+                                <tr>
+                                    <td>SEO</td>
+                                    <td>&#10004;</td> <!-- Checkmark (tick) -->
+                                </tr>
+                            </tbody>
+                        </table>
+
+                         <a class="btn btn-danger" data-bs-toggle="modal" id="deleteButton" data-bs-target="#deleteModal">Cancel plan</a>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{else}}
+ <p>Buy a plan, <a href="/pricing">Go to Pricings</a></p>
+  
+{{/if}}
+
+<div class="modal fade" tabindex="-1" role="dilaog" id="deleteModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">You are about to remove your membership plan</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <p>
+                    This will remove the membership plan of <b class="fw-bold">{{customer.firstname}} {{customer.lastname}}</b><br/>
+                    Are you sure?
+                </p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+               
+                  <a href="/member/cancel-plan" class="btn btn-primary">Yes, Remove Plan</a>
+            
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+

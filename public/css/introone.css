@@ -1,0 +1,106 @@
+/* CSS (styles.css): */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('https://source.unsplash.com/7okkFhxrxNw'); /* Add the path to your background image */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make the body fill the entire viewport height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.container {
+    max-width: 419px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color:#fff
+}
+
+h1{
+  color: #5e5ee4;
+}
+
+.question {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Add space between the label and dropdown */
+.question label {
+    
+}
+
+.answer-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container{
+  border-radius: 15px;
+}
+
+.upperlabel{
+  
+}
+
+h1{
+  color: #5e5ee4;
+}
+
+.question {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Add space between the label and dropdown */
+.question label {
+    
+}
+
+.answer-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container{
+  border-radius: 15px;
+}
+
+.upperlabel{
+  
+}

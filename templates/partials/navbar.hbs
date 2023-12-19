@@ -1,0 +1,40 @@
+<header>
+    <nav class="navbar" id="navbar">
+        <div class="logodiv" id="logodiv">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAABFlJREFUaEPNWolx1EAQHEXCkYmJBIjEXCTgSCATIBJRK62kfebpXknAVbkM0jzd8+1znuTEZxKReVC/04WNBYLLa0UmP0q/gg+MJDJUvC9tEvYJUQsMQBjhwSJh5UsMdrB0q/XTnrCLBQHaO9jK/niD2PFyxDVSGyIkhaEMR4GTDp0jAngPI9ZgmVcR+dJIp/8/12d2IOJynWSSORyip3p4oPopwl0LWMPXHspdJk4RPqzBmcmEq2wUGcYWjPGGSH5v+Djlp2Z4EnlyY2gcNEAYiae9VDTQgpJWiCDuCf4VYcR2I/MQkUTiE1LeBC5N9Fd++EFEtn/TJoEMW4v+8vy7iLx4Xq0gIsFVJ868kH1v+gwMk4Q7N4Otx9Kt5FfCxboagbhy4xH5gkoOngB130C2a6FmSrNxP3FYgsA6eIYrc1UkyqPp6FlJMT0IA/aHi3on4u7MLJtmpJy1tLSllbRhs7ZIVBPoA7MIlUZn6ngAgoEq2BK6xkdRxWfQzMp+Hwoi4XRWDhXDPiBFp1jU6C/yWIUhvBsfu3VEV13K28kdX1QRJX2avH7mgxKlRYRU7NK2R78YoFMcMTs5SmHAPWwVVfmcJAzttNYDPlHSgWh7YbBZd0ratlgQHlo2cvQxdphU1JpX93Dkr35PbS2vIbzXz1JGyLVOs1kCGepof4rIg6rfwJ0blGJQRKjbvi1vTrEprSNJ5+CvmIEIIvwevxJSTAJDKyzEF5HpITK/AwZVOju35+cfIpJ+kM8bdvi35zVAGMHRdonZ2vslXrF0+RkrF/Iw9jHWGwi7HY3daV1AzKJ+C2HH2eu8XMRXjPoMDxK2BpU5pRGFuGjcXVQmXMkYJc2iQfZZa6iZT7ql/BgplG3XyJ4dWprr3yLyTcWkAGEIK0tQRP3KFbrxVSc0tckz3oRE3zzURvMmw3UcR+AeCf/qtvDJZJjaRl7LC5piBpdaFyKcVUDCATgI+xouQnQTD+NsElZmpEZ4P7o5gyoEMSCgHBmnKe7hbUpndkFE4YO4SwBebdyTEIXlcBkNrXrF1r5eh1qiDwBWrE5sKMLmxsPbjs3dvc1exE6/YcTgijgEMcKKeyZDupPO6AUkuwh0NjHCSiTPEzaMroh48roGRhjxNiFCmdNwVAem8BEuvSxn5d4bSh4kBBMmJjB3ldsZtr8ACKJ7lrBtvsNoTBBoOxPU4fra4FKvuZXQwDq8E0ZaY5/rEEm6EXrCN0xpoIC0r4ZoMogCVK2QUPa2/AGLm0m4h7E4IVWTLaXz8Od4NRNhpnQ6/Kcr2f3WUV+CLZgEfEI032Iuf8qEqEF1r+cDMV9rTiLEFQ9SxbzMSpjHjlRPI7M4wW4tS1AXYCuBMD3Mh7PXIAhn5UHCuppzWhr0EwWFJxxZJN8XGb6JYg2IIFxvGEhepvgtJf1XQsdGoIgfq3q/fLee898DWyChDP/TjF3sHCIcpxTZYl2MPAalSgCE/w+gg/w6tT+lBmJShbBMtwAAAABJRU5ErkJggg=="/>
+        </div>
+
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
+
+        <div class="navbar-links">
+        <ul id="navbar-ul">
+            <li><a href="/">Home</a></li>
+            <li><a href="templates">Templates</a></li>
+            <li><a href="aboutus">About</a></li>
+            <li><a href="/#contact">Contact</a></li>
+
+            {{#if admin}}
+            <li><a href="logout" id="logoutListItem">Logout</a></li>
+            <img src="photos/logo.png" alt="" class="profile-pic">
+            <li><a href="admin">Admin</a></li>
+            {{else if member}}
+            <li><a href="logout" id="logoutListItem">Logout</a></li>
+            
+           <img src="photos/logo.png" alt="" class="profile-pic">
+            <li><a href="member">Profile</a></li>
+            
+            {{else}}
+            <li><a href="signup" class="signup-btn">Sign Up</a></li>
+            <li><a href="signin" class="signin-btn">sign in</a></li>
+            {{/if}}
+
+        </ul>
+        </div>
+
+    </nav>
+    </header>

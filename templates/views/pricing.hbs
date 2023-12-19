@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="js/pricingscript.js" defer></script>
+     <script src="https://checkout.razorpay.com/v1/checkout.js" defer></script>
+    <!-- Include your custom CSS if needed -->
+    <style>
+        /* Add custom CSS here */
+    </style>
+</head>
+<body class="{{#if darkMode}}bg-dark{{else}}bg-white{{/if}}">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Basic Plan</h3>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">₹500/month</h4>
+                        <p class="card-text">Access to basic features</p>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>5 Templates</td>
+                                    <td>&#10004;</td> <!-- Checkmark (tick) -->
+                                </tr>
+                                <tr>
+                                    <td>SEO</td>
+                                    <td>&#10004;</td> <!-- Checkmark (tick) -->
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button type="submit" class="btn btn-primary" id="basicplan">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Premium Plan</h3>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">₹1000/month</h4>
+                        <p class="card-text">Access to premium features</p>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>10 Templates</td>
+                                    <td>&#10004;</td> <!-- Checkmark (tick) -->
+                                </tr>
+                                <tr>
+                                    <td>SEO</td>
+                                    <td>&#10004;</td> <!-- Checkmark (tick) -->
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <button type="submit" class="btn btn-warning" id="premiumplan">Subscribe</button>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

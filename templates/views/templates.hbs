@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Templates  </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/templates.css"> <!-- Link to external CSS file -->
+    <script src="/js/templatescript.js" defer></script>
+     <script src="https://checkout.razorpay.com/v1/checkout.js" defer></script>
+</head>
+<body>
+    
+    {{>templateheader}}
+
+
+
+
+    {{{body}}}
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Separate JavaScript File -->
+    
+    <script>
+    // Check if darkMode is true
+     if ({{ darkMode }}) {
+      // Add #343a40 color to the body background
+      document.body.style.backgroundColor = '#343a40';
+    }
+  </script>
+</body>
+</html>
